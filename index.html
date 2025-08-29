@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratify - Leading Solar Energy Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-lg z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="WhatsApp Image 2025-08-29 at 3.18.35 AM.jpeg" alt="Gratify Logo" class="h-12 w-12 rounded-full mr-4 shadow-lg border-2 border-green-100">
+                    <h1 class="text-2xl font-bold text-gray-800">Gratify</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-600 hover:text-green-500 transition-colors">Home</a>
+                    <a href="#inspection" class="nav-link text-gray-600 hover:text-green-500 transition-colors">Inspection & Testing</a>
+                    <a href="#collaborations" class="nav-link text-gray-600 hover:text-green-500 transition-colors">Collaborations</a>
+                    <a href="#projects" class="nav-link text-gray-600 hover:text-green-500 transition-colors">Projects</a>
+                    <a href="#about" class="nav-link text-gray-600 hover:text-green-500 transition-colors">About Us</a>
+                    <a href="#ceo" class="nav-link text-gray-600 hover:text-green-500 transition-colors">CEO Message</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-green-500 transition-colors">Contact Us</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-green-500">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="#home" class="mobile-nav-link block px-3 py-2 text-gray-600 hover:text-green-500">Home</a>
+                    <a href="#inspection" class="mobile-nav-link block px-3 py-2 text-gray-600 hover:text-green-500">Inspection & Testing</a>
+                    <a href="#collaborations" class="mobile-nav-link block px-3 py-2 text-gray-600 hover:text-green-500">Collaborations</a>
+                    <a href="#projects" class="mobile-nav-link block px-3 py-2 text-gray-600 hover:text-green-500">Projects</a>
+                    <a href="#about" class="mobile-nav-link block px-3 py-2 text-gray-600 hover:text-green-500">About Us</a>
+                    <a href="#ceo" class="mobile-nav-link block px-3 py-2 text-gray-600 hover:text-green-500">CEO Message</a>
+                    <a href="#contact" class="mobile-nav-link block px-3 py-2 text-gray-600 hover:text-green-500">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 to-blue-50 pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-left">
+                    <div class="relative mb-8">
+                        <img src="WhatsApp Image 2025-08-29 at 3.18.35 AM.jpeg" alt="Gratify Logo" class="h-40 w-40 rounded-full shadow-2xl mx-auto md:mx-0 border-4 border-white transform hover:scale-105 transition-transform duration-300">
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-green-400 rounded-full animate-pulse"></div>
+                        <div class="absolute -bottom-2 -left-2 w-6 h-6 bg-blue-400 rounded-full animate-pulse delay-1000"></div>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+                        Powering the Future with
+                        <span class="text-green-500">Solar Energy</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Gratify leads the renewable energy revolution, providing cutting-edge solar solutions for homes, businesses, and communities. Join us in creating a sustainable future.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button onclick="scrollToSection('contact')" class="bg-green-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 transition-colors shadow-lg transform hover:scale-105 transition-all duration-200">
+                            Get Started
+                        </button>
+                        <button onclick="scrollToSection('about')" class="border-2 border-green-500 text-green-500 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-500 hover:text-white transition-colors transform hover:scale-105 transition-all duration-200">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative z-10">
+                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Solar Panels" class="rounded-2xl shadow-2xl">
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-green-400 rounded-full opacity-20 animate-pulse"></div>
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-blue-400 rounded-full opacity-20 animate-pulse delay-1000"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspection & Testing Section -->
+    <section id="inspection" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Inspection & Testing</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our comprehensive inspection and testing services ensure your solar installation operates at peak efficiency and safety standards.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-search text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Site Assessment</h3>
+                    <p class="text-gray-600 text-center">
+                        Comprehensive site evaluation including solar potential, shading analysis, and structural assessment.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-tools text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Installation Testing</h3>
+                    <p class="text-gray-600 text-center">
+                        Rigorous testing of all components, connections, and system performance before commissioning.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-chart-line text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Performance Monitoring</h3>
+                    <p class="text-gray-600 text-center">
+                        Continuous monitoring and analysis to ensure optimal performance and early issue detection.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaborations Section -->
+    <section id="collaborations" class="py-20 bg-gradient-to-r from-green-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Strategic Collaborations</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We partner with industry leaders, research institutions, and communities to advance solar technology and adoption.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-industry text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Manufacturing Partners</h3>
+                    <p class="text-gray-600 text-sm">Leading solar panel and component manufacturers</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Research Institutions</h3>
+                    <p class="text-gray-600 text-sm">Universities and research centers</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Government Agencies</h3>
+                    <p class="text-gray-600 text-sm">Federal and state energy departments</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-3xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Community Partners</h3>
+                    <p class="text-gray-600 text-sm">Local organizations and communities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Projects</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover our portfolio of successful solar installations and innovative energy solutions across various sectors.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
+                        <img src="WhatsApp Image 2025-08-29 at 3.18.35 AM.jpeg" alt="Gratify Logo" class="h-20 w-auto opacity-80">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Residential Solar Installation</h3>
+                        <p class="text-gray-600 mb-4">Complete home solar system with battery backup for energy independence.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-green-600 font-medium">5kW System</span>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
+                        <img src="WhatsApp Image 2025-08-29 at 3.18.35 AM.jpeg" alt="Gratify Logo" class="h-20 w-auto opacity-80">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Commercial Solar Farm</h3>
+                        <p class="text-gray-600 mb-4">Large-scale solar installation for industrial complex with smart monitoring.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-green-600 font-medium">2MW System</span>
+                            <span class="text-sm text-gray-500">2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center">
+                        <img src="WhatsApp Image 2025-08-29 at 3.18.35 AM.jpeg" alt="Gratify Logo" class="h-20 w-auto opacity-80">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Community Solar Project</h3>
+                        <p class="text-gray-600 mb-4">Shared solar installation serving multiple households in rural community.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-green-600 font-medium">500kW System</span>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">About Gratify</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Founded with a vision to accelerate the world's transition to sustainable energy, Gratify has been at the forefront of solar innovation for over a decade.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Our team of engineers, technicians, and sustainability experts work tirelessly to deliver cutting-edge solar solutions that are not only environmentally responsible but also economically viable.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-500 mb-2">500+</div>
+                            <div class="text-gray-600">Projects Completed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-500 mb-2">50MW+</div>
+                            <div class="text-gray-600">Solar Capacity</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-500 mb-2">98%</div>
+                            <div class="text-gray-600">Customer Satisfaction</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-500 mb-2">24/7</div>
+                            <div class="text-gray-600">Support Available</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Solar Installation" class="rounded-2xl shadow-xl">
+                    <div class="absolute -bottom-6 -left-6 bg-green-500 text-white p-6 rounded-xl shadow-lg">
+                        <div class="text-2xl font-bold">15+</div>
+                        <div class="text-sm">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO Message Section -->
+    <section id="ceo" class="py-20 bg-gradient-to-br from-gray-50 to-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Message from Our CEO</h2>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                        <div class="flex-shrink-0">
+                            <div class="w-32 h-32 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user-tie text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Shais Rao</h3>
+                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                                "At Gratify, we believe that sustainable energy is not just a choice—it's a responsibility. Every solar panel we install represents a step toward a cleaner, more sustainable future for our children and grandchildren.
+                            </p>
+                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                                Our mission goes beyond providing solar solutions; we're building a community of environmental stewards who understand that the power to change the world lies in our daily choices. Together, we can create a future where clean energy is accessible to all."
+                            </p>
+                            <div class="flex items-center gap-4">
+                                <div class="text-green-500 font-semibold">Shais Rao</div>
+                                <div class="text-gray-400">|</div>
+                                <div class="text-gray-600">CEO & Founder, Gratify</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Ready to start your solar journey? Get in touch with our team of experts today.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Get In Touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Address</div>
+                                <div class="text-gray-300">123 Solar Street, Green City, GC 12345</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Phone</div>
+                                <div class="text-gray-300">+1 (555) 123-4567</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Email</div>
+                                <div class="text-gray-300">info@gratify.com</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-clock text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Business Hours</div>
+                                <div class="text-gray-300">Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">First Name</label>
+                                <input type="text" name="firstName" required class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-green-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Last Name</label>
+                                <input type="text" name="lastName" required class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-green-500 focus:outline-none">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-green-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Phone</label>
+                            <input type="tel" name="phone" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-green-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Message</label>
+                            <textarea name="message" rows="4" required class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-green-500 focus:outline-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-green-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-600 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="WhatsApp Image 2025-08-29 at 3.18.35 AM.jpeg" alt="Gratify Logo" class="h-10 w-10 rounded-full mr-3 shadow-md border border-green-100">
+                        <h3 class="text-xl font-bold">Gratify</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Leading the renewable energy revolution with innovative solar solutions for a sustainable future.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-green-400 transition-colors">Solar Installation</a></li>
+                        <li><a href="#" class="hover:text-green-400 transition-colors">Maintenance</a></li>
+                        <li><a href="#" class="hover:text-green-400 transition-colors">Consulting</a></li>
+                        <li><a href="#" class="hover:text-green-400 transition-colors">Energy Audits</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-green-400 transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-green-400 transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-green-400 transition-colors">News</a></li>
+                        <li><a href="#" class="hover:text-green-400 transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-300 mb-4">Stay updated with our latest news and offers.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="flex-1 px-3 py-2 rounded-l-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-green-500">
+                        <button class="bg-green-500 px-4 py-2 rounded-r-lg hover:bg-green-600 transition-colors">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Gratify. All rights reserved. | Designed with <i class="fas fa-heart text-red-500"></i> for a sustainable future.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-green-500 text-white w-12 h-12 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
